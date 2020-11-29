@@ -205,11 +205,6 @@
   color: #151515;
 }
 
-.d-flex {
-  display: -ms-flexbox!important;
-  display: flex!important;
-}
-
 .section-title {
   padding-bottom: 40px;
 }
@@ -252,6 +247,15 @@
   font-size: 14px;
   margin-bottom: 0;
   margin-left: auto;
+}
+
+.services .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .align-items-stretch {

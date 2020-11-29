@@ -1,4 +1,3 @@
-import { Col, Container, Row } from 'react-bootstrap';
 import './App.css';
 import Header from './components/header/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,7 +6,7 @@ import Footer from './components/footer/footer';
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Header></Header>
       <Body></Body>
       <Footer></Footer>

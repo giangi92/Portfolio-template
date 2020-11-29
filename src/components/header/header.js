@@ -20,7 +20,7 @@ const Header = () => {
                 setIsOnTop(scrollCheck)
             }
         })
-    })
+    }, isOnTop)
 
     return (
         <div>

@@ -1,17 +1,16 @@
 import React from 'react'
 
-const CallToAction = (props) => {
-    // let contentData = require('../../content-data.json');
-    let contentData = props.props;
+const CallToAction = () => {
+    let contentData = require('../../content-data.json');
     return (
         <div>
             <section id="cta" className="cta">
-                <div className="container aos-init aos-animate" data-aos="zoom-in">
+                <div className="container" data-aos="zoom-in">
 
                     <div className="text-center">
-                        <h3>{contentData.title}</h3>
-                        <p> {contentData.text} </p>
-                        <a className="cta-btn" href="#">{contentData.button}</a>
+                        <h3>{contentData.section5.title}</h3>
+                        <p> {contentData.section5.text} </p>
+                        <a className="cta-btn" href="#">{contentData.section5.button}</a>
                     </div>
 
                 </div>
