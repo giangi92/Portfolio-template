@@ -1,8 +1,9 @@
 import React from 'react'
 import image1 from '../../media/img/3dtechnology.jpg'
 
-const About = () => {
-    let contentData = require('../../content-data.json');
+const About = (props) => {
+    let contentData = props.props;
+    
     return (
         <div>
             <div id="about" className="container section main">
@@ -11,17 +12,17 @@ const About = () => {
                         <img src={image1} className="img-fluid" alt="" />
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-                        <h3>{contentData.section2.title}</h3>
+                        <h3>{contentData.title}</h3>
                         <p className="font-italic">
-                            {contentData.section2.text1}
+                            {contentData.text1}
                         </p>
                         <ul>
-                        <li><i className="ri-check-double-line"></i> {contentData.section2.list1}</li>
-                        <li><i className="ri-check-double-line"></i> {contentData.section2.list2}</li>
-                        <li><i className="ri-check-double-line"></i> {contentData.section2.list3}</li>
+                        <li><i className="ri-check-double-line"></i> {contentData.list1}</li>
+                        <li><i className="ri-check-double-line"></i> {contentData.list2}</li>
+                        <li><i className="ri-check-double-line"></i> {contentData.list3}</li>
                         </ul>
                         <p>
-                            {contentData.section2.text2}
+                            {contentData.text2}
                         </p>
                     </div>
                     </div>

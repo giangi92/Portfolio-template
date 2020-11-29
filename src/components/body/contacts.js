@@ -1,15 +1,16 @@
 import React from 'react'
 
-const Contacts = () => {
-    let contentData = require('../../content-data.json');
+const Contacts = (props) => {
+    // let contentData = require('../../content-data.json');
+    let contentData = props.props;
     return (
         <div>
             <section id="contact" className="contact">
                 <div className="container aos-init aos-animate" data-aos="fade-up">
 
                     <div className="section-title">
-                        <h2>{contentData.section6.section_subtitle}</h2>
-                        <p>{contentData.section6.section_title}</p>
+                        <h2>{contentData.section_subtitle}</h2>
+                        <p>{contentData.section_title}</p>
                     </div>
 
                     <div>
@@ -22,20 +23,20 @@ const Contacts = () => {
                             <div className="info">
                                 <div className="address">
                                     <i className="ri-map-2-line"></i>
-                                    <h4>{contentData.section6.title1}</h4>
-                                    <p>{contentData.section6.text1}</p>
+                                    <h4>{contentData.title1}</h4>
+                                    <p>{contentData.text1}</p>
                                 </div>
                             </div>
                             <div className="info">
                                 <i className="ri-mail-line"></i>
-                                <h4>{contentData.section6.title2}</h4>
-                                <p>{contentData.section6.text2}</p>
+                                <h4>{contentData.title2}</h4>
+                                <p>{contentData.text2}</p>
                             </div>
 
                             <div className="info">
                                 <i className="ri-phone-line"></i>
-                                <h4>{contentData.section6.title3}</h4>
-                                <p>{contentData.section6.text3}</p>
+                                <h4>{contentData.title3}</h4>
+                                <p>{contentData.text3}</p>
                             </div>
 
                         </div>

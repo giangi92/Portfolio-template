@@ -25,11 +25,11 @@ const Body = () => {
                 </div>
             </section>
             
-            <About></About>
-            <Features></Features>
-            <Services></Services>
-            <CallToAction></CallToAction>
-            <Contacts></Contacts>
+            <About props = {contentData.section2}></About>
+            <Features props = {contentData.section3}></Features>
+            <Services props = {contentData.section4}></Services>
+            <CallToAction props = {contentData.section5}></CallToAction>
+            <Contacts props = {contentData.section6}></Contacts>
             
         </div>
     )
